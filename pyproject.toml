@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "goaltracker"
+version = "0.1.0"
+description = ""
+authors = ["Maxim Dvoretsky <mx.dvoretsky@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.111.1"
+uvicorn = {extras = ["standart"], version = "^0.30.3"}
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.31"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
