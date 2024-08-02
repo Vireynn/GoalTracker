@@ -1,7 +1,6 @@
 from sqlalchemy.orm import DeclarativeBase
 from sqlalchemy.ext.asyncio import (
     AsyncEngine,
-    AsyncSession,
     async_sessionmaker,
     create_async_engine
 )
@@ -41,8 +40,8 @@ class DatabaseAssistant:
 
 
 db_assistant = DatabaseAssistant(
-    url=settings.db.url,
-    echo=settings.db.echo,
-    echo_pool=settings.db.echo_pool,
-    max_overflow=settings.db.max_overflow
+    url=settings.postgres.url,
+    echo=settings.postgres.echo,
+    echo_pool=settings.postgres.echo_pool,
+    max_overflow=settings.postgres.max_overflow
 )
