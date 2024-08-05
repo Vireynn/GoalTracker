@@ -40,7 +40,7 @@ class DatabaseAssistant:
 
 
 db_assistant = DatabaseAssistant(
-    url=settings.postgres.url,
+    url=settings.postgres.DATABASE_URL_asyncpg,
     echo=settings.postgres.echo,
     echo_pool=settings.postgres.echo_pool,
     max_overflow=settings.postgres.max_overflow
