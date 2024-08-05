@@ -24,7 +24,7 @@ class User(Base):
 
 class UserPassword(Base):
     __tablename__ = "user_passwords"
-
+    id: Mapped[int] = mapped_column(primary_key=True)
     user_id: Mapped[int] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
     hashed_password: Mapped[str] = mapped_column(String, nullable=False)
     created_at: Mapped[created_at]
