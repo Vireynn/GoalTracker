@@ -6,7 +6,6 @@ from sqlalchemy.ext.asyncio import (
 )
 
 from core.config import settings
-from typing import AsyncGenerator
 
 class DatabaseAssistant:
     def __init__(

@@ -3,8 +3,7 @@ from contextlib import asynccontextmanager
 from uvicorn import run
 from fastapi import FastAPI
 
-from core.models import db_assistant, Base
-
+from core.db import Base, db_assistant
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # startup
